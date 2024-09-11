@@ -47,7 +47,15 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
     implementation 'androidx.appcompat:appcompat:1.0.0-rc01'
+    implementation('com.jfrog.bintray.gradle:gradle-bintray-plugin') {
+        version {
+            branch = 'master'
+        } 
 }
+}
+
+
+
 
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
